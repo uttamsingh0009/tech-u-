@@ -1,11 +1,24 @@
-# Tech U — Netlify AI Website
+# Tech U — Complete AI Website
 
-A deployable Tech U website with a Netlify serverless backend connected to the OpenAI Responses API. The OpenAI key stays server-side in Netlify environment variables.
+A ChatGPT-style independent AI assistant branded as **Tech U**, created and owned by Uttam Singh, with AI powered by OpenAI.
 
-## Netlify
-1. Upload this project to a Git repository and import it into Netlify, or deploy the folder with Netlify's deploy flow.
-2. In Netlify: Site configuration → Environment variables, add `OPENAI_API_KEY` with your own OpenAI API key.
-3. Optional: set `OPENAI_MODEL` to `gpt-5.6-luna` (default).
-4. Redeploy after adding the variable.
+## Included
+- Responsive chat UI
+- Real OpenAI Responses API backend
+- Secure server-side API key
+- Conversation context
+- Local recent-chat history
+- Optional web-search tool
+- Text/code file context upload
+- Browser voice input where supported
+- Mobile-first layout
+- Backend health indicator
 
-The frontend calls `/.netlify/functions/chat`; the API key is never placed in browser JavaScript.
+## Run
+1. Install Node.js 18+.
+2. Run `npm install`.
+3. Copy `.env.example` to `.env` and set `OPENAI_API_KEY`.
+4. Run `npm start`.
+5. Open `http://localhost:3000`.
+
+Never put the API key in `public/index.html` or client-side JavaScript.
